@@ -58,4 +58,13 @@ $(document).ready(function() {
     $('.mobile-nav-popup-container').removeClass('open');
   });
  
+  $('.sidebar-container .sidebar-title').click(function() {
+    var sidebar = $('.sidebar-container');
+    if(sidebar.hasClass('open')){
+      sidebar.removeClass('open')
+    }else{
+      sidebar.addClass('open')      
+    }
+  });
+  
 });

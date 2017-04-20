@@ -51,12 +51,29 @@ a:hover, a:focus {
   background-color: #fff;
 }
 
+.breadcrumb a {
+  color: #7a7a7a;
+}
+
+.breadcrumb a:hover {
+  color: #23527c;;
+}
+
+.breadcrumb .active {
+  font-weight: bold;
+}
+
 .block-container .sidebar-container .sidebar-title {
   font-size: 24px;
   color: #fff;
   background-color: #107a0b;
   margin: 0;
   padding: 10px 20px;
+}
+
+.block-container .sidebar-container .client-title {
+  font-size: 18px;
+  color: #222222;
 }
 
 .block-container .sidebar-container .sidebar-nav {
@@ -92,6 +109,74 @@ a:hover, a:focus {
   font-size: 18px;
 }
 
+.review-item {
+  border: 1px solid #bcbcbc;
+  padding: 10px 10px 0 10px;
+  margin-bottom: 30px;
+}
+
+.review-item .client-review {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    -moz-align-items: center;
+    align-items: center;
+    padding-bottom: 10px;
+    color: #222222;
+}
+
+.review-item .client-review .client-image {
+  background-size: cover;
+  background-repeat: none;
+  width: 60px;
+  height: 60px;
+  border-radius: 100%;
+  margin-right: 10px;
+}
+
+.review-item .client-review .client-info .client-name {
+  font-size: 15px;
+  font-weight: bold; 
+  margin: 0;
+}
+
+.review-item .client-review .client-info .client-position {
+  font-size: 14px;
+  margin: 0;
+}
+
+.review-item .client-comment {
+  font-size: 14px;
+  line-height: 20px;
+  font-style: italic;
+  color: #222222;
+  margin-bottom: 25px;
+}
+
+.review-item .client-comment .icon-quotes-left {
+  padding-right: 6px;
+  color: #bcbcbc;
+}
+
+.review-item .client-comment .icon-quotes-right {
+  padding-left: 6px;
+  color: #bcbcbc;
+}
+
+.review-item .btn-detail {
+  background-color: #00aeef;
+  bottom: 30px;
+  right: 16px;
+  position: absolute;
+  border-radius: 0;
+  color: #fff;
+  padding: 3px 10px;
+}
 /* =======================================================
 *   HOME
 * ======================================================= */
@@ -761,6 +846,44 @@ a:hover, a:focus {
 		max-width: 430px;
 		text-align: left;
 	}
+  .review-item .btn-detail {
+    bottom: 0;
+  }
+  .section-container .block-sidebar .sidebar-container:after {
+    content: " ";
+    width: 0;
+    height: 0;
+    border-left: 7px solid transparent;
+    border-right: 7px solid transparent;
+    border-top: 7px solid #fff;
+    position: absolute;
+    top: 20px;
+    right: 30px;
+  }
+  
+  .section-container .block-sidebar .sidebar-container.open:after {
+    width: 0;
+    height: 0;
+    border-left: 7px solid transparent;
+    border-right: 7px solid transparent;
+    border-bottom: 7px solid #fff;
+    border-top: none;
+  }
+  
+  .section-container .block-sidebar .sidebar-container .sidebar-nav {
+    max-height: 0;
+    overflow: hidden;
+    -webkit-transition: all .6s ease;
+    -moz-transition: all .6s ease;
+    -o-transition: all .6s ease;
+    transition: all .6s ease;
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,.07);
+  }
+  
+  .section-container .block-sidebar .sidebar-container.open .sidebar-nav {
+    max-height: 1000px;
+    overflow: auto;
+  }
 }
 
 @media screen and (max-width: 992px) and (min-width: 768px) {
