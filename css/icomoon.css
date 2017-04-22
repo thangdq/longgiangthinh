@@ -24,6 +24,9 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+.icon-shopping-cart:before {
+  content: "\e917";
+}
 .icon-chevron-circle-right:before {
   content: "\e90a";
 }
@@ -56,6 +59,12 @@
 }
 .icon-facebook:before {
   content: "\e909";
+}
+.icon-triangle-right:before {
+  content: "\e916";
+}
+.icon-triangle-left:before {
+  content: "\e915";
 }
 .icon-globe:before {
   content: "\e908";
