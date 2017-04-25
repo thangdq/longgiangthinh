@@ -1069,6 +1069,13 @@ a:hover, a:focus {
   line-height: 75px;
   text-align: right;
   padding: 0 15px;
+  color: #222222;
+}
+
+.products-container .table-cart .cart-quantity input{
+  height: 30px;
+  line-height: 30px;
+  text-align: center;
 }
 
 .products-container .table-cart .product-image {
