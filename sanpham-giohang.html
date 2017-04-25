@@ -99,7 +99,7 @@
                 <li>
                   <a href="tintuc.html" class="menu-item">TIN TỨC</a>
                 </li>
-                <li>
+                <li class="active">
                   <a href="sanpham.html" class="menu-item">SẢN PHẨM</a>
                 </li>
                 <li>
@@ -111,7 +111,7 @@
                 <li>
                   <a href="tuyendung.html" class="menu-item">TUYỂN DỤNG</a>
                 </li>
-                <li class="active">
+                <li>
                   <a href="lienhe.html" class="menu-item">LIÊN HỆ</a>
                 </li>
               </ul>
@@ -161,7 +161,7 @@
               <li>
                 <a href="tintuc.html" class="menu-item">TIN TỨC</a>
               </li>
-              <li>
+              <li class="active">
                 <a href="sanpham.html" class="menu-item">SẢN PHẨM</a>
               </li>
               <li>
@@ -173,7 +173,7 @@
               <li>
                 <a href="tuyendung.html" class="menu-item">TUYỂN DỤNG</a>
               </li>
-              <li class="active">
+              <li>
                 <a href="lienhe.html" class="menu-item">LIÊN HỆ</a>
               </li>
             </ul>
@@ -183,75 +183,95 @@
     </header>
 
     <!-- include products section -->
-    <section class="section-container contact-container">
+    <section class="section-container products-container">
       <div class="block-container">
         <div class="container">
           <ol class="breadcrumb">
             <li><a href="#">Trang chủ</a></li>
-            <li class="active">Liên hệ</li>
+            <li><a href="#">Sản phẩm</a></li>
+            <li class="active">Giỏ hàng</li>
           </ol>
-          <h3 class="title-sub" style="margin-top: 0;">Liên hệ</h3>
+          <h3 class="title-sub" style="margin-top: 0;">Chi tiết giỏ hàng</h3>
+          <div class="table-cart">
+            <table class="table table-condensed">
+              <thead>
+                <tr class="cart-menu">
+                  <td class="image">Sản phẩm</td>
+                  <td class="price">Đơn giá</td>
+                  <td class="quantity">Số lượng</td>
+                  <td class="total">Thành tiền</td>
+                  <td></td>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td class="cart-product">
+                    <a class="product-image" href="" style="background-image: url('images/sp-tinhbot-2.jpg') ">
+                    </a>
+                    <h4><a href="">Tinh bột nghệ</a></h4>
+                  </td>
+                  <td class="cart-price">
+                    <p>350.000đ</p>
+                  </td>
+                  <td class="cart-quantity">
+                    <div class="cart_quantity_button">
+                      <a class="cart_quantity_up" href=""> + </a>
+                      <input class="cart_quantity_input" type="text" name="quantity" value="1" autocomplete="off" size="2">
+                      <a class="cart_quantity_down" href=""> - </a>
+                    </div>
+                  </td>
+                  <td class="cart-total">
+                    <p class="cart-total-price">350.000đ</p>
+                  </td>
+                  <td class="cart-delete">
+                    <a class="cart-quantity-delete" href=""><i class="icon-cancel-circle"></i></a>
+                  </td>
+                </tr>
 
-          <div class="contact-content">
-            <div class="col-md-7 contact-form">
-              <!-- Contact form -->
-              <form class="form-horizontal">
-                <div class="form-group">
-                  <input type="text" name="" class="form-control" placeholder="Họ tên" />
-                </div>
-                <div class="form-group">
-                  <input type="text" name="" class="form-control" placeholder="Email" />
-                </div>
-                <div class="form-group">
-                  <input type="text" name="" class="form-control" placeholder="Điện thoại" />
-                </div>
-                <div class="form-group">
-                  <textarea class="form-control" rows="4" placeholder="Nội dung"></textarea>
-                </div>
-                <div class="form-group mt30">
-                  <button type="submit" class="btn btn-submit">GỬI THÔNG TIN</button>
-                </div>
-              </form>
-              <!-- Contact form -->
+                <tr>
+                  <td class="cart-product">
+                    <a class="product-image" href="" style="background-image: url('images/sp-tinhbot.jpg') ">
+                    </a>
+                    <h4><a href="">Tinh bột sắn</a></h4>
+                  </td>
+                  <td class="cart-price">
+                    <p>350.000đ</p>
+                  </td>
+                  <td class="cart-quantity">
+                    <div class="cart_quantity_button">
+                      <a class="cart_quantity_up" href=""> + </a>
+                      <input class="cart_quantity_input" type="text" name="quantity" value="1" autocomplete="off" size="2">
+                      <a class="cart_quantity_down" href=""> - </a>
+                    </div>
+                  </td>
+                  <td class="cart-total">
+                    <p class="cart-total-price">350.000đ</p>
+                  </td>
+                  <td class="cart-delete">
+                    <a class="cart-quantity-delete" href=""><i class="icon-cancel-circle"></i></a>
+                  </td>
+                </tr>
+                <tr class="cart-summary">
+                  <td colspan="2">
+                    <p>Giao hàng nội thành: Thu phí 50.000đ cho đơn hàng</p>
+                    <p>Giao hàng ngoại thành: Thu phí 100.000đ cho đơn hàng</p>
+                  </td>
+                  <td>
+                    <p>Tổng cộng</p>
+                  </td>
+                  <td>
+                    <p>700.000đ</p>
+                  </td>
+                  <td></td>
+                </tr>
+              </tbody>
+            </table>
+            <div class="cart-action">
+              <a href="" class="continue"><i class="icon-angle-double-left"></i> Tiếp tục mua hàng</a>
+              <button class="btn btn-order"><i class="icon-shopping-cart"></i> ĐẶT HÀNG</button>
             </div>
-            <div class="col-md-5 contact-info">
-              <ul>
-                <li><div class="contact-icon"><i class="icon-location"></i></div><span>xã Vĩnh Ninh - Quảng Ninh - Quảng Bình</span></li>
-                <li><div class="contact-icon"><i class="icon-phone2"></i></div><span>0232 911 755</span></li>
-                <li><div class="contact-icon"><i class="icon-mail-envelope-closed"></i></div><span><a href="mailto:longgiangthinh@gmail.com">longgiangthinh@gmail.com</a></span></li>
-                <li><div class="contact-icon"><i class="icon-globe"></i></div><span><a href="#">http://longgiangthinh.com.vn</a></span></li>
-              </ul>
-            </div>
+
           </div>
-
-          <div style="overflow:hidden;height:355px;width:100%;">
-            <div id="gmap_canvas" style="height:355px;width:100%;"></div>
-          </div>
-          <script type="text/javascript">
-            function initMap() {
-              var myOptions = {
-                zoom: 16,
-                center: new google.maps.LatLng(17.400068, 106.639019),
-
-                mapTypeId: google.maps.MapTypeId.ROADMAP
-              };
-              map = new google.maps.Map(document.getElementById('gmap_canvas'), myOptions);
-              marker = new google.maps.Marker({
-                map: map,
-                position: new google.maps.LatLng(17.400068, 106.639019)
-              });
-              infowindow = new google.maps.InfoWindow({
-                content: '<p><strong>Điạ chỉ: </strong><span style="color: #308BE1">Long Giang Thinh</span></p>'
-              });
-              google.maps.event.addListener(marker, 'click', function() {
-                infowindow.open(map, marker);
-              });
-              infowindow.open(map, marker);
-            }
-            // google.maps.event.addDomListener(window, 'load', initMap);
-          </script>
-          <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDejmRs-dtrKtkCZlAQlpY4nzh4PpNJut4&callback=initMap"></script>
-
         </div>
       </div>
       <div class="clearfix"></div>
