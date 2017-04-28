@@ -25,6 +25,10 @@ a:hover, a:focus {
   text-decoration: none;
 }
 
+input[type=number]::-webkit-inner-spin-button {
+  opacity: 1;
+}
+
 .btn-link:hover, .btn-link:focus {
   text-decoration: none;
 }
@@ -955,7 +959,7 @@ a:hover, a:focus {
 *   PRODUCTS
 * ======================================================= */
 
-.products-container button {
+.products-container .btn {
   border-radius: 0;
   font-size: 16px;
   line-height: 40px;
@@ -974,6 +978,13 @@ a:hover, a:focus {
   color: #fff;
 }
 
+.products-container .block-content .product-action input {
+  height: 40px;
+  width: 80px;
+  line-height: 40px;
+  text-align: center;
+}
+
 .products-container .btn-view-more:hover, .products-container .btn-order:hover {
   background-color: #008aca;
   color: #fff!important;
@@ -983,6 +994,62 @@ a:hover, a:focus {
   font-size: 24px;
   bottom: -3px;
   position: relative;
+}
+
+.products-container .block-content .product-detail {
+  margin-bottom: 15px;
+}
+
+.products-container .block-content .block-title {
+  margin-bottom: 10px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  -moz-align-items: center;
+  align-items: center;
+}
+
+.products-container .block-content .product-name {
+  margin-top: 0;
+}
+
+.products-container .block-content .product-price {
+  margin-right: 0;
+  text-align: right;
+  width: 100%;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  -webkit-flex: 1;
+  -moz-flex: 1;
+  flex: 1;
+}
+
+.products-container .block-content .product-price .price{
+  font-size: 24px;
+  font-weight: bold;
+  color: #db3704;
+}
+
+.products-container .block-content .product-image {
+  height: 366px;
+}
+
+.products-container .block-content .product-quality-indicators table {
+  height: auto!important;
+  width: 100%!important;
+  border-bottom: 2px solid #7d7d7d;
+  margin-bottom: 20px;
+}
+
+.products-container .block-content .product-quality-indicators td p {
+  margin-bottom: 0;
+  line-height: 24px;
+  padding: 3px 0;
 }
 
 .products-container .client-form .form-group {
@@ -1024,6 +1091,14 @@ a:hover, a:focus {
 
 .products-container .client-form span.red {
   color: #d12f2f;
+}
+
+.products-container .table-cart {
+  overflow-x: auto;
+}
+
+.products-container .table-cart .table-condensed{
+  min-width: 700px;
 }
 
 .products-container .table-cart .cart-menu {
@@ -1072,9 +1147,15 @@ a:hover, a:focus {
   color: #222222;
 }
 
+.products-container .table-cart .cart-total {
+  color: #db3704;
+  font-weight: bold;
+}
+
 .products-container .table-cart .cart-quantity input{
   height: 30px;
   line-height: 30px;
+  max-width: 60px;
   text-align: center;
 }
 
@@ -1085,6 +1166,44 @@ a:hover, a:focus {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
+}
+
+.products-container .table-cart .product-name a {
+  margin-left: 10px;
+  font-size: 18px;
+  color: #222222;
+}
+
+.products-container .table-cart .cart-summary td {
+  padding: 15px;
+}
+
+.products-container .table-cart .cart-summary p {
+  margin-bottom: 0;
+}
+
+.products-container .table-cart .cart-summary .charge-ship p {
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.products-container .table-cart .cart-summary .summary-lable p,
+.products-container .table-cart .cart-summary .summary-value p {
+  line-height: 79px;
+}
+
+.products-container .table-cart .cart-summary .summary-lable {
+  min-width: 110px;
+}
+
+.products-container .table-cart .cart-summary .summary-value {
+  font-size: 24px;
+  font-weight: bold;
+  color: #db3704;
+}
+
+.products-container .table-cart .cart-quantity-delete {
+  color: #acacac;
 }
 
 .products-container .cart-action {
@@ -1350,7 +1469,8 @@ a:hover, a:focus {
   .news-container .list-news .news-item .news-title {
     margin-top: 0;
   }
-  .recruitment-container .block-content .block-image, .news-container .list-news .news-item .news-image {
+  .recruitment-container .block-content .block-image,
+  .news-container .list-news .news-item .news-image {
     height: 175px;
   }
   .block-content .block-title {
@@ -1411,6 +1531,11 @@ a:hover, a:focus {
   .block-content .block-image {
     height: 400px;
   }
+  .news-container .news-relate .news-relate-item .news-image,
+  .products-container .block-content .product-image {
+    height: 350px;
+    margin-bottom: 20px;
+  }
   .products-container .client-form .btn-submit {
     float: none;
   }
@@ -1466,7 +1591,20 @@ a:hover, a:focus {
   .footer-container .info-copyright {
     font-size: 13px;
   }
+  .news-container .news-relate .news-relate-item .news-image,
   .block-content .block-image {
     height: 200px;
+  }
+  .products-container .block-content .product-name,
+  .products-container .block-content .product-price .price {
+    font-size: 20px;
+  }
+  .products-container .table-cart .cart-summary .charge-ship p {
+    font-size: 14px;
+  }
+  .products-container .cart-action .continue,
+  .products-container button {
+    font-size: 14px;
+    line-height: 35px;
   }
 }
