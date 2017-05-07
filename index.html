@@ -77,11 +77,14 @@
                     </span>
                 </form>
               </div>
-              <button class="btn btn-default btn-toggle" id="btn-open-menu-mobile">
-                  <span></span>
-                  <span></span>
-                  <span></span>
-                </button>
+              <div class="mobile-button">
+                <a class="btn-search" id="btn-search-mobile">
+                    <i class="icon-search"></i>
+                </a>
+                <a class="btn-toggle" id="btn-open-menu-mobile">
+                    <i class="icon-menu"></i>
+                </a>
+              </div>
             </div>
           </div>
         </div>
@@ -119,6 +122,13 @@
           </div>
         </div>
 
+        <!-- include search form -->
+        <div class="dropdown-menu dropdown-form-search">
+          <form class="ng-pristine ng-valid">
+              <div class="form-group"><input type="text" name="" placeholder="Tìm kiếm" class="form-control"></div>
+          </form>
+        </div>
+
         <!-- include mobile menu -->
         <div class="mobile-nav-popup-container">
           <div class="mobile-nav-header">
@@ -140,16 +150,7 @@
               </ul>
             </div>
           </div>
-
-          <div class="mobile-header-search">
-            <form class="mobile-header-form">
-              <input type="text" class="form-control" placeholder="">
-              <span>
-                <button class="btn" type="button"><i class="icon-search"></i></button>
-              </span>
-            </form>
-          </div>
-
+          
           <nav class="mobile-nav-popup">
             <ul>
               <li class="active">
@@ -214,7 +215,11 @@
       <div class="block-container">
         <div class="container">
           <h2 class="title">Sản phẩm</h2>
-          <p class="container-description">Công ty chúng tôi đang hướng đến sản xuất các loại tinh bột và sản xuất nông sản</p>
+          <div class="container-description">
+            <p>Hotline1 (Kinh doanh): 0912.249.937</p>
+            <p>Hotline 2 (Nhân sự): 0913.457.907</p>
+            <p>Email: <a href="mailto:longgiangthinh@gmail.com">longgiangthinh@gmail.com</a></p>
+          </div>
           <div class="list-products row">
             <div class="product-item col-sm-6 col-lg-3">
               <a href="#" class="product-image" style="background-image: url('images/sanpham_4.jpg') "></a>

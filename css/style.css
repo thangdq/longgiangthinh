@@ -56,10 +56,14 @@ input[type=number]::-webkit-inner-spin-button {
 }
 
 .section-container .container-description {
-  font-size: 20px;
+  font-size: 18px;
   color: #7a7a7a;
   text-align: center;
   margin-bottom: 30px;
+}
+
+.section-container .container-description p {
+  margin: 0;
 }
 
 .breadcrumb {
@@ -154,7 +158,7 @@ input[type=number]::-webkit-inner-spin-button {
   margin-bottom: 30px;
 }
 
-.block-container .block-content .see-more {
+.block-container .see-more {
   font-size: 16px;
   font-weight: bold;
   color: #222222;
@@ -265,9 +269,27 @@ input[type=number]::-webkit-inner-spin-button {
 
 
 /*************** header ***************/
+.mobile-button {
+  display:-webkit-box;
+  display:-webkit-flex;
+  display:-moz-flex;
+  display:-ms-flexbox;
+  display:flex;
+}
 
-#btn-open-menu-mobile {
+#btn-open-menu-mobile, #btn-search-mobile {
   display: none;
+  border: none;
+  padding: 0;
+  margin-left: 20px;
+}
+
+#btn-open-menu-mobile i {
+  font-size: 36px;
+}
+
+#btn-search-mobile i {
+  font-size: 30px;
 }
 
 .header-container .header-content-info .logo {
@@ -393,12 +415,48 @@ input[type=number]::-webkit-inner-spin-button {
   background-color: #d12f2f;
 }
 
+.dropdown-menu.dropdown-form-search {
+    box-shadow: 0 0px 5px 0 rgba(0,0,0,0.1);
+    display: block;
+    opacity: 0;
+    visibility: hidden;
+    border: none;
+    padding: 7px 10px;
+    margin: 0;
+    border-radius: 0;
+    width: 100%;
+    margin-top: 20px;
+    -webkit-transition: all 0.3s ease-out;
+    -moz-transition: all 0.3s ease-out;
+    -o-transition: all 0.3s ease-out;
+    transition: all 0.3s ease-out;
+}
+
+.dropdown-menu.dropdown-form-search.active{
+  margin-top: 0;
+  top: auto;
+  opacity: 1;
+  visibility: visible;
+}
+
+.dropdown-menu.dropdown-form-search .form-group {
+  margin-bottom: 0;
+}
+
+.dropdown-menu.dropdown-form-search input {
+  padding: 0;
+  box-shadow: none;
+  border: none;
+  border-radius: 0;
+  font-size: 18px;
+}
+
 .mobile-nav-popup-container {
   max-width: 400px;
   position: fixed;
   z-index: 99999;
   visibility: hidden;
-  padding-top: 105px;
+  padding-top: 65px;
   left: 0;
   right: 0;
   top: 0;
@@ -606,7 +664,7 @@ input[type=number]::-webkit-inner-spin-button {
   font-size: 14px;
   line-height: 24px;
   color: #fff;
-  text-align: center;
+  text-align: justify;
 }
 
 .products-container .list-products .product-item .product-title a {
@@ -1372,10 +1430,9 @@ input[type=number]::-webkit-inner-spin-button {
   .header-container .header-content-nav.navbar, .header-container .header-right .header-info, .header-container .header-right .header-search, .footer-container .footer-products {
     display: none!important;
   }
-  #btn-open-menu-mobile {
+  #btn-open-menu-mobile, #btn-search-mobile {
     display: block;
     margin-top: 30px;
-    padding: 10px 15px;
   }
 }
 
@@ -1546,13 +1603,23 @@ input[type=number]::-webkit-inner-spin-button {
 
 @media only screen and (max-width: 576px) {
   .header-container .header-content-info .logo .logo-image {
-    height: 60px;
+    height: 50px;
   }
   .header-container .header-content-info .logo .logo-text>p.logo-text {
-    font-size: 26px;
+    font-size: 20px;
   }
   .header-container .header-content-info .logo .logo-text>p.logo-text-sub {
-    font-size: 14px;
+    font-size: 11px;
+    margin-bottom: 0;
+  }
+  #btn-open-menu-mobile, #btn-search-mobile {
+    margin-left: 10px;
+  }
+  #btn-open-menu-mobile i {
+    font-size: 32px;
+  }
+  #btn-search-mobile i {
+    font-size: 28px;
   }
   .banner-container .banner-item {
     height: 250px;
@@ -1575,17 +1642,22 @@ input[type=number]::-webkit-inner-spin-button {
 
 @media only screen and (max-width: 375px) {
   .header-container .header-content-info .logo .logo-image {
-    height: 45px;
+    height: 40px;
   }
   .header-container .header-content-info .logo .logo-text>p.logo-text {
-    font-size: 19px;
+    font-size: 16px;
   }
   .header-container .header-content-info .logo .logo-text>p.logo-text-sub {
-    font-size: 10px;
+    font-size: 9px;
     margin: 0;
   }
-  #btn-open-menu-mobile {
-    padding: 10px 8px;
+  #btn-open-menu-mobile i {
+    font-size: 30px;
+  }
+  #btn-search-mobile i {
+    font-size: 26px;
+  }
+  #btn-open-menu-mobile, #btn-search-mobile {
     margin-top: 20px;
   }
   .footer-container .info-copyright {

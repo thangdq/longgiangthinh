@@ -41,7 +41,7 @@
               <div class="logo">
                 <a href="#">
                   <img class="logo-image" src="images/logo.png" alt="logo" >
-                </a>           
+                </a>
                 <h1 class="logo-text">
                   <p class="logo-text-sub">CÔNG TY CỔ PHẦN TƯ VẤN VÀ ĐẦU TƯ</p>
                   <p class="logo-text">LONG GIANG THỊNH</p>
@@ -50,7 +50,7 @@
               <div class="header-right">
                 <div class="header-info clearfix">
                   <div class="header-info-hotline">
-                    <p class="info-number">(+84) 912.249.937 - (+84) 913.457.907</p>  
+                    <p class="info-number">(+84) 912.249.937 - (+84) 913.457.907</p>
                   </div>
                   <div class="btn-group btn-multi-language">
                     <button type="button" class="btn btn-link dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -75,13 +75,16 @@
                     <span>
                       <button class="btn" type="button"><i class="icon-search"></i></button>
                     </span>
-                  </form>           
+                  </form>
                 </div>
-                <button class="btn btn-default btn-toggle" id="btn-open-menu-mobile">
-                  <span></span>
-                  <span></span>
-                  <span></span>
-                </button>
+                <div class="mobile-button">
+                  <a class="btn-search" id="btn-search-mobile">
+                      <i class="icon-search"></i>
+                  </a>
+                  <a class="btn-toggle" id="btn-open-menu-mobile">
+                      <i class="icon-menu"></i>
+                  </a>
+                </div>
               </div>
             </div>
           </div>
@@ -119,8 +122,15 @@
           </div>
         </div>
 
+        <!-- include search form -->
+        <div class="dropdown-menu dropdown-form-search">
+          <form class="ng-pristine ng-valid">
+              <div class="form-group"><input type="text" name="" placeholder="Tìm kiếm" class="form-control"></div>
+          </form>
+        </div>
+
         <!-- include mobile menu -->
-        <div class="mobile-nav-popup-container">      
+        <div class="mobile-nav-popup-container">
           <div class="mobile-nav-header">
             <span class="close-popup" id="btn-close-menu-mobile"><i class="icon-cancel-circle"></i></span>
                   <div class="btn-group btn-multi-language">
@@ -140,16 +150,6 @@
               </ul>
             </div>
           </div>
-            
-          <div class="mobile-header-search">
-            <form class="mobile-header-form">
-              <input type="text" class="form-control" placeholder="">
-              <span>
-                <button class="btn" type="button"><i class="icon-search"></i></button>
-              </span>
-            </form>           
-          </div>
-            
           <nav class="mobile-nav-popup">
             <ul>
               <li>
@@ -190,7 +190,7 @@
             <li><a href="#">Trang chủ</a></li>
             <li class="active">Vùng nguyên liệu</li>
           </ol>
-          
+
           <div class="row">
             <div class="col-lg-3 col-md-4 block-sidebar">
               <div class="sidebar-container">
@@ -203,23 +203,23 @@
                   <li class="sidebar-item"><a href="vungnguyenlieu-detail.html" class="sidebar-link">Chăn nuôi & Thú y</a></li>
                   <li class="sidebar-item"><a href="vungnguyenlieu-detail.html" class="sidebar-link">Nông sản khác</a></li>
                 </ul>
-                
+
                 <div class="block-client-review">
                   <h3 class="client-title">Khách hàng nói về chúng tôi</h3>
                   <div class="review-item">
                     <div class="client-review">
-                      <div class="client-image" style="background-image: url('images/client-image.jpg')">			
+                      <div class="client-image" style="background-image: url('images/client-image.jpg')">
                       </div>
                       <div class="client-info">
                         <p class="client-name">Bà Trần Hải Anh</p>
                         <p class="client-position">Phó chủ tịch HĐQT</p>
-                      </div>    
+                      </div>
                     </div>
-                    <p class="client-comment"><i class="icon-quotes-left"></i>Công ty đã tạo thêm nhiều cơ hội việc làm, thu nhập cho người dân, đóng góp tích cực ...<i class="icon-quotes-right"></i></p>   
+                    <p class="client-comment"><i class="icon-quotes-left"></i>Công ty đã tạo thêm nhiều cơ hội việc làm, thu nhập cho người dân, đóng góp tích cực ...<i class="icon-quotes-right"></i></p>
                     <a class="btn btn-detail"><i class="icon-chevron-right"></i></a>
                   </div>
                 </div>
-                
+
               </div>
             </div>
             <div class="col-lg-9 col-md-8 block-content">
@@ -232,8 +232,8 @@
                     <div class="col-md-12 col-sm-8 block-info">
                       <h3 class="block-title"><a href="vungnguyenlieu-detail.html">Giống</a></h3>
                       <p class="block-description">Tinh bột sắn được sản xuất từ củ khoai mì, được Công ty thu mua tại các vùng nguyên liệu ở các...</p>
-                    </div>  
-                  </div>		 
+                    </div>
+                  </div>
                 </div>
                 <div class="resource-item col-md-6 col-lg-4">
                   <div class="row">
@@ -243,8 +243,8 @@
                     <div class="col-md-12 col-sm-8 block-info">
                       <h3 class="block-title"><a href="vungnguyenlieu-detail.html">Khoa học & Công nghệ</a></h3>
                       <p class="block-description">Tinh bột sắn được sản xuất từ củ khoai mì, được Công ty thu mua tại các vùng nguyên liệu ở các...</p>
-                    </div>  
-                  </div>		 
+                    </div>
+                  </div>
                 </div>
                 <div class="resource-item col-md-6 col-lg-4">
                   <div class="row">
@@ -254,8 +254,8 @@
                     <div class="col-md-12 col-sm-8 block-info">
                       <h3 class="block-title"><a href="vungnguyenlieu-detail.html">Sắn</a></h3>
                       <p class="block-description">Tinh bột sắn được sản xuất từ củ khoai mì, được Công ty thu mua tại các vùng nguyên liệu ở các...</p>
-                    </div>  
-                  </div>		 
+                    </div>
+                  </div>
                 </div>
                 <div class="resource-item col-md-6 col-lg-4">
                   <div class="row">
@@ -265,8 +265,8 @@
                     <div class="col-md-12 col-sm-8 block-info">
                       <h3 class="block-title"><a href="vungnguyenlieu-detail.html">Trồng trọ & BVTV</a></h3>
                       <p class="block-description">Tinh bột sắn được sản xuất từ củ khoai mì, được Công ty thu mua tại các vùng nguyên liệu ở các...</p>
-                    </div>  
-                  </div>		 
+                    </div>
+                  </div>
                 </div>
                 <div class="resource-item col-md-6 col-lg-4">
                   <div class="row">
@@ -276,8 +276,8 @@
                     <div class="col-md-12 col-sm-8 block-info">
                       <h3 class="block-title"><a href="vungnguyenlieu-detail.html">Chăn nuôi & Thú y</a></h3>
                       <p class="block-description">Tinh bột sắn được sản xuất từ củ khoai mì, được Công ty thu mua tại các vùng nguyên liệu ở các...</p>
-                    </div>  
-                  </div>		 
+                    </div>
+                  </div>
                 </div>
                 <div class="resource-item col-md-6 col-lg-4">
                   <div class="row">
@@ -287,19 +287,19 @@
                     <div class="col-md-12 col-sm-8 block-info">
                       <h3 class="block-title"><a href="vungnguyenlieu-detail.html">Nông sản khác</a></h3>
                       <p class="block-description">Tinh bột sắn được sản xuất từ củ khoai mì, được Công ty thu mua tại các vùng nguyên liệu ở các...</p>
-                    </div>  
-                  </div>		 
+                    </div>
+                  </div>
                 </div>
-                
+
               </div>
             </div>
           </div>
-          
+
         </div>
       </div>
       <div class="clearfix"></div>
     </section>
-    
+
     <!-- include footer -->
     <footer class="footer-container">
       <div class="container">
@@ -307,7 +307,7 @@
           <div class="footer-logo row">
             <a href="#">
               <img class="logo-image" src="images/footer-logo.png" alt="logo" width="75">
-            </a>           
+            </a>
             <h1 class="logo-text">
               <p class="logo-text-sub">CÔNG TY CỔ PHẦN TƯ VẤN VÀ ĐẦU TƯ</p>
               <p class="logo-text">LONG GIANG THỊNH</p>
@@ -321,7 +321,7 @@
             <li><a href="#"><i class="icon-linkedin"></i></a></li>
           </ul>
         </div>
-        
+
         <div class="col-md-6 col-sm-12 col-sm-push-0 col-xs-12 col-xs-push-0">
           <div class="row">
             <div class="footer-products col-md-6">
@@ -333,7 +333,7 @@
                 <li><a href="#"><i>&#707;</i>Giống</a></li>
                 <li><a href="#"><i>&#707;</i>Thiết bị</a></li>
                 <li><a href="#"><i>&#707;</i>Sản phẩm khác</a></li>
-              </ul>			
+              </ul>
             </div>
 
             <div class="footer-contact col-md-6 col-sm-12 col-xs-12">
@@ -345,20 +345,20 @@
                   <li><i class="icon-email"></i><a href="mailto:longgiangthinh@gmail.com">longgiangthinh@gmail.com</a></li>
                   <li><i class="icon-globe"></i><a href="#">http://longgiangthinh.com.vn</a></li>
                 </ul>
-              </div>		
+              </div>
             </div>
-            
+
             <ul class="social-network-mobile">
               <li><a href="#"><i class="icon-twitter"></i></a></li>
               <li><a href="#"><i class="icon-facebook"></i></a></li>
               <li><a href="#"><i class="icon-google-plus"></i></a></li>
               <li><a href="#"><i class="icon-linkedin"></i></a></li>
             </ul>
-          </div>			
-        </div>			
+          </div>
+        </div>
       </div>
       <div class="info-copyright text-center">
-        <p class="text-info">Copyright &copy; Longgiangthinh 2017. All rights reserved.</p>	
+        <p class="text-info">Copyright &copy; Longgiangthinh 2017. All rights reserved.</p>
       </div>
       <div class="clearfix"></div>
     </footer>
@@ -374,6 +374,6 @@
 	<script src="js/jquery.flexslider-min.js"></script>
 
 	<script src="js/main.js"></script>
-  
+
 </body>
 </html>
